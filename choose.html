@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #nav{
+            display: flex;
+            position: sticky;
+   top: 0;
+   z-index: 100;
+   background-color: white;
+        }
+        #c1{
+            flex-basis: 16%;
+        } #c2{
+            flex-basis: 40%;
+            margin-left: 10%;
+        }
+        #c3{
+            flex-basis: 30%;
+            margin-left: 8%;
+            
+            
+        }
+        #c1>img{
+            width: 80%;
+        }
+        #c2{
+            display: flex;
+        }
+        #c2>a{
+            margin-left: 5%;
+            color: black;
+            text-decoration: none;
+            
+        }
+        #c3>a{
+            margin-left: 5%;
+            width: 60%;
+            border: none;
+        }
+        #login{
+            margin: 3%;
+            margin-right: 0px;
+            margin-left: 180px;
+            width: 15%;
+            border: none;
+            height: 60%;
+            background-color: white;
+        }
+        #signup{
+            margin: 3%;
+            
+            margin-left: 0px;
+            width: 18%;
+            border: 1px solid white;
+            background-color: royalblue;
+            color: white;
+            height: 60%;
+        }
+        #box1{
+            width: 60%;
+            margin: 10% auto;
+        }
+        div{
+            
+            text-align: center;
+        }
+        #box2{
+            width: 30%;
+            margin: 2% auto;
+            border: 1px solid gray;
+
+        }
+        #box2>a>div{
+            display: flex;
+            margin: 0;
+            padding: 2%;
+            gap: 1%;
+            border: 1px solid gray;
+            
+        }
+        #box2>a{
+            text-decoration: none;
+            color: black;
+        }
+        #box3{
+            width: 35%;
+           
+            text-align: center;
+            margin: auto;
+            height: 50px;
+        }
+        #sub{
+            width: 100%;
+            height: 100%;
+            background-color: royalblue;
+            border: none;
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+        }
+        #box4{
+            width: 35%;
+            margin: auto;
+            font-weight: bold;
+            margin-top: 2%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="c1">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"/>
+        </div>
+        <div id="c2">
+            <a href="plans.html"><p>Plans & Menu</p></a>
+            <a href=""><p>How It works</p></a>
+            <a href=""><p>Gifts</p></a>
+            <a href=""><p>Refer A Friend</p></a>
+            <a href=""><p>Help</p></a>
+
+        </div>
+        <div id="c3">
+            <a href="login.html"><button id="login">Login</button></a>
+            <a href="signup.html"><button id="signup">Sign Up</button></a>
+        </div>
+        
+    </div>
+
+    <div id="box1">
+        <h1>Choose A Delivery Day</h1>
+    </div>
+    <div id="box2">
+       <a  id="thursday" > <div ><span style="font-weight: bold;">Thursday</span><span>, Nov 18</span></div></a>
+       <a href=""><div><span style="font-weight: bold;">Friday</span>, Nov 19</div></a>
+        <a href=""><div><span style="font-weight: bold;">Saturday</span>, Nov 20</div></a>
+            <a href=""><div><span style="font-weight: bold;">Sunday</span>, Nov 21</div></a>
+                <a href=""><div><span style="font-weight: bold;">Monday</span>, Nov 22</div></a>
+        
+    </div>
+    <div id="box3">
+        <button id="sub">Next</button>
+
+
+    </div>
+    <div id="box4">
+        
+    </div>
+    
+</body>
+<script>
+    var day = document.getElementById("thursday");
+    day.addEventListener("click" , dayshow);
+    function dayshow(){
+    var out = document.getElementById("box4");
+    out.textContent = "First dlivery on" +" :"+ day.textContent;
+    };
+    var meals =JSON.parse(localStorage.getItem("mealfinal"));
+    var datef =[]; 
+    var submit = document.getElementById("sub");
+    submit.addEventListener("click" , date);
+    function date(){
+        //console.log(meals);
+       var date = {
+           date:day.textContent
+       };
+       datef.push(date);
+       //console.log(datef);
+       localStorage.setItem("datefinal",JSON.stringify(datef));
+       window.location.href="meals.html";
+
+
+    }
+
+    
+
+</script>
+</html>

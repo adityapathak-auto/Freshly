@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            
+            margin: 200px ;
+            width: 300px;
+            height: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="otp" placeholder="Enter Otp"/>
+    <button id="sub">Submit</button>
+    
+</body>
+<script>
+    var int = document.getElementById("otp");
+    var btn = document.getElementById("sub");
+    btn.addEventListener("click", otp);
+    function otp(){
+        
+        
+        
+        if(int.value == "1234"){
+            alert("Payement Success");
+        } else{
+            alert("Invalid Otp");
+        }
+        int.value = "";
+    }
+    
+    
+</script>
+</html>

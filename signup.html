@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Freshly</title>
+    <style>
+        div{
+            border: 1px solid white;
+        }
+        #box1{
+            background-image: url("https://res.cloudinary.com/freshly/image/upload/c_crop,g_auto,dpr_auto,q_30,w_1500,h_900/v1494958610/joinnow-southchicken.jpg");
+            height: 600px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 1%;
+
+        }
+        #box11{
+            width: 47%;
+            margin: 10% 25%;
+            background-color:rgba(250, 250, 250, 0.8);
+             
+            padding: 1%;
+            
+
+
+        }
+        #box11>form>input{
+            margin: 1%;
+
+        }
+        #email{
+            width: 40%;
+            height: 50px;
+            font-size: 17px;
+            padding-left: 1%;
+        }
+        #zip{
+            width: 25%;
+            height: 50px;
+            font-size: 17px;
+            padding-left: 1%;
+        }
+        #submit{
+            height: 50px;
+            width: 20%;
+            font-size: 17px;
+            background-color: royalblue;
+            color: white;
+            border: none;
+        }
+        
+         #nav{
+            display: flex;
+            position: sticky;
+   top: 0;
+   z-index: 100;
+   background-color: white;
+        }
+        #c1{
+            flex-basis: 16%;
+        } #c2{
+            flex-basis: 40%;
+            margin-left: 10%;
+        }
+        #c3{
+            flex-basis: 30%;
+            margin-left: 8%;
+            
+            
+        }
+        #c1>img{
+            width: 80%;
+        }
+        #c2{
+            display: flex;
+        }
+        #c2>a{
+            margin-left: 5%;
+            color: black;
+            text-decoration: none;
+            
+        }
+        #c3>a{
+            margin-left: 5%;
+            width: 60%;
+            border: none;
+        }
+        #login{
+            margin: 3%;
+            margin-right: 0px;
+            margin-left: 180px;
+            width: 15%;
+            border: none;
+            height: 60%;
+            background-color: white;
+        }
+        #signup{
+            margin: 3%;
+            
+            margin-left: 0px;
+            width: 18%;
+            border: 1px solid white;
+            background-color: royalblue;
+            color: white;
+            height: 60%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="nav">
+        <div id="c1">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"/>
+        </div>
+        <div id="c2">
+            <a href="plans.html"><p>Plans & Menu</p></a>
+            <a href=""><p>How It works</p></a>
+            <a href=""><p>Gifts</p></a>
+            <a href=""><p>Refer A Friend</p></a>
+            <a href=""><p>Help</p></a>
+
+        </div>
+        <div id="c3">
+            <a href="login.html"><button id="login">Login</button></a>
+            <a href=""><button id="signup">Sign Up</button></a>
+        </div>
+        
+    </div>
+    <div id="box1">
+        <div id="box11">
+            <h1 style="font-size: 40px;">Dinner’s ready!</h1>
+            <h2 style="font-size: 32px;">Chef-prepared, healthy meals delivered weekly</h2>
+            <form>
+                <input type="email" placeholder="Email" id="email"/>
+                <input type="number" placeholder="Zip" id="zip"/>
+                <a href="plans.html"><input type="submit" value="Continue" id="submit"/></a>
+            </form>
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+            <p>By continuing, you agree to our<a href="">Terms</a>and<a href="">Privacy Policy</a>& will receive emails from Freshly.</p>
+
+        </div>
+
+
+    </div>
+    
+</body>
+<script>
+    var fm = document.querySelector("form");
+    fm.addEventListener("submit", signup);
+    var userData =JSON.parse(localStorage.getItem("usersfinal")) || [];
+    
+    
+
+    function signup(){
+        event.preventDefault();
+        //window.location.href="plans.html";
+        var email = document.getElementById("email")
+        var zip = document.getElementById("zip");
+        //var userData = [];
+        var user = {
+            email:email.value,
+            zip:zip.value
+
+
+        }
+        userData.push(user);
+        
+
+        localStorage.setItem("usersfinal", JSON.stringify(userData));
+        console.log(userData);
+       email.value = "";
+       zip.value="";
+       window.location.href="plans.html";
+
+    }
+
+</script>
+</html>

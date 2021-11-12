@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Delivery Service Across The &nbsp; &nbsp; U.S | Freshly</title>
+    <style>
+        #box{
+            width: 98%;
+            
+        }
+        div{
+            border: none;
+        }
+        #nav{
+            display: flex;
+            position: sticky;
+   top: 0;
+   z-index: 100;
+   background-color: white;
+        }
+        #c1{
+            flex-basis: 16%;
+        } #c2{
+            flex-basis: 40%;
+            margin-left: 10%;
+        }
+        #c3{
+            flex-basis: 30%;
+            margin-left: 8%;
+            
+            
+        }
+        #c1>img{
+            width: 80%;
+        }
+        #c2{
+            display: flex;
+        }
+        #c2>a{
+            margin-left: 5%;
+            color: black;
+            text-decoration: none;
+            
+        }
+        #c3>a{
+            margin-left: 5%;
+            width: 60%;
+            border: none;
+        }
+        #login{
+            margin: 3%;
+            margin-right: 0px;
+            margin-left: 180px;
+            width: 15%;
+            border: none;
+            height: 60%;
+            background-color: white;
+        }
+        #signup{
+            margin: 3%;
+            
+            margin-left: 0px;
+            width: 18%;
+            border: 1px solid white;
+            background-color: royalblue;
+            color: white;
+            height: 60%;
+        }
+        #box2{
+            display: flex;
+        }
+        #b1{
+            flex-basis: 50%;
+            background-color: #FFF9C4;
+            padding: 5%;
+        }
+        #b2{
+            flex-basis: 50%;
+           
+        }
+        #bb2{
+            width: 100%;
+            height: 100%;
+            background-image: url("https://assets-global.website-files.com/5d03b4e13011831ae4624b37/618408871eb7681636d82488_Header_Image.png");
+            background-size: auto cover;
+            background-repeat: no-repeat;
+        }
+        #b1>div>h1{
+           
+            font-size: 60px;
+
+        }
+        #email{
+            width: 80%;
+            margin: 1%;
+            height: 30px;
+            
+            border: none;
+        }
+        #zip{
+            width: 60%;
+            margin: 1%;
+            border: none;
+            height: 30px;
+        }
+        #submit{
+            width: 30%;
+            background-color: royalblue;
+            color: white;
+            border: none;
+            height: 40px;
+            font-size: 20px;
+
+        }
+        #backimg{
+            width: 100%;
+        }
+        #bb3{
+            width: 30%;
+            
+            color: white;
+            margin: 70% 80% 5% 68%;
+        }
+        #bb3>h5{
+            text-align: center;
+            color: white;
+            
+        }
+        #bb3>a{
+            text-decoration: none;
+            color: #FAFAFA;
+            text-align: center;
+            width: 30%;
+            height: 50%;
+            background-color: royalblue;
+            font-size: 18px;
+
+            
+        }
+        .learn{
+            background-color: royalblue;
+            width: 60%;
+            margin-left: 25%;
+        }
+        #box3{
+            display: flex;
+            gap: 3%;
+            width: 100%;
+            margin: 2% 0;
+
+        }
+        #box3>div>img{
+            width: 100%;
+        }
+        #hh1{
+            display: block;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        #box4{
+            background-image: url("https://assets-global.website-files.com/5d03b4e130118314af624b20/5d94e04ff2b857688f7138b6_home_image2.jpg");
+            height: 1024px;
+
+        }
+        #bb41{
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            margin-top: 5%;
+            padding: 2%;
+        }
+        #box61{
+            display: flex;
+            gap: 5%;
+            margin-bottom: 1%;
+            margin: 0 5% 2%;
+
+        }
+        #box62{
+            display: flex;
+            gap: 5%;
+            margin: 0 5%;
+
+        }
+        #box61>div{
+            border: 5px solid white;
+            border-radius: 20px;
+            background-color: #FFFDE7;
+
+
+
+        }
+        #box62>div{
+            border: 5px solid white;
+            border-radius: 20px;
+            background-color: #FFFDE7;
+
+
+
+        }
+        #box61>div>img{
+            width: 100%;
+
+        }
+        #box62>div>img{
+            width: 100%;
+
+        }
+        #box61>div>p{
+            text-align: center;
+        }
+        #box62>div>p{
+            text-align: center;
+        }
+        #plans{
+            background-color: royalblue;
+            text-align: center;
+            width: 20%;
+            margin: 5% auto;
+            height: 30px;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            
+        }
+        
+        #aa{
+            text-decoration: none;
+        }
+        #box51{
+            margin: 2% auto;
+            width: 60%;
+            text-align: center;
+        }
+        #box51>p{
+            font-size: 20px;
+            color: #616161;
+
+        }
+        #box52{
+            display: flex;
+            gap: 5%;
+        }
+        #box52>div{
+            flex-basis: 25%;
+            margin: 1%;
+            padding: 2%;
+            border: 0.2px solid grey;
+        }
+        .choosebtn{
+            background-color: royalblue;
+            width: 90%;
+            padding: 8%;
+            color: white;
+            border: none;
+        }
+        #box53{
+            margin: 2% auto;
+            width: 20%;
+            border: none;
+
+        }
+        #box6{
+            width: 90%;
+            margin: 10% auto;
+            text-align: center;
+        }
+        #box63{
+            display: flex;
+            gap: 5%;
+        }
+        #box63>div>img{
+            width: 70%;
+        }
+        #box7{
+            width: 100%;
+            height: 600px;
+           
+        }
+        #box71{
+            
+            height: 200px;
+            width: 600px;
+            margin: 15% 0;
+            margin-left: -55%;
+            background-color: white;
+                        
+
+        }
+        #box72{
+            width: 55%;
+            height: 100%;
+            margin-left: 45%;
+            flex-basis: 70%;
+            background-image: url("https://assets-global.website-files.com/5d03b4e130118314af624b20/5d978a326f21d7b547d89e73_home_imageeat.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+        }
+        #box72>img{
+            width: 100%;
+            height: 100%;
+        }
+        #learn{
+            color: white;
+            width: 200px;
+            text-decoration: none;
+        }
+        #ll{
+            width: 15%;
+            padding: 0.5%;
+        }
+        #box8{
+            margin: 2% 0;
+        }
+        #box82{
+        background-image: url("https://assets-global.website-files.com/5d03b4e130118314af624b20/60928e2ceb6cb2368a43ad07_Freshly_GiftCardRedemption_1732x1416%20(1).jpg");
+        width: 60%;
+        height: 700px;
+        background-size: 100% auto;
+        }
+        #box81{
+            margin-left: 80%;
+            margin-top: 20%;
+            width: 80%;
+            background-color: white;
+            padding: 2%;
+        }
+        #email2{
+            width: 80%;
+            height: 50px;
+            margin-bottom: 2%;
+            font-size: 16px;
+            padding: 1%;
+            border-radius: 5px;
+            border:0.2px solid grey;
+        }
+        #zip2{
+            width: 80%;
+            height: 50px;
+            margin-bottom: 2%;
+            font-size: 16px;
+            padding: 1%;
+            border-radius: 5px;
+            border:0.2px solid grey
+        }
+        #sub2{
+            width: 70%;
+            height: 50px;
+            background-color: royalblue;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+        #box9{
+            height: 200px;
+            display: flex;
+            gap: 5%;
+            background-color: #EEEEEE;
+            
+        }
+        #box9>img{
+            width: 12%;
+            height: 100%;
+
+        }
+        #box10{
+            width: 60%;
+            margin: auto;
+            display: flex;
+            gap: 5%;
+        }
+        #box101{
+            height: 170px;
+            flex-basis: 18%;
+        }
+        #box103{
+            margin-left: 10%;
+            flex-basis: 15%;
+        }
+        #box102{
+            margin-left: 10%;
+            flex-basis: 15%;
+        }
+        #box104{
+            flex-basis: 15%;
+            margin-left: 10%;
+
+        }
+        #box104>img{
+            width: 100%;
+        }
+
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id = "box">
+        <div id="nav">
+            <div id="c1">
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"/>
+            </div>
+            <div id="c2">
+                <a href="plans.html"><p>Plans & Menu</p></a>
+                <a href=""><p>How It works</p></a>
+                <a href=""><p>Gifts</p></a>
+                <a href=""><p>Refer A Friend</p></a>
+                <a href=""><p>Help</p></a>
+
+            </div>
+            <div id="c3">
+                <a href="login.html"><button id="login">Login</button></a>
+                <a href="signup.html"><button id="signup">Sign Up</button></a>
+            </div>
+            
+        </div>
+        <div id="box2">
+            <div id="b1">
+                <div>
+                    <h1>Chef Cooked, Healthy Meals Delivered To You.</h1>
+                    <h3>See Meals Available In Your Area!</h3>
+                    <form>
+                        <label>Email Address</label>
+                        <br/>
+                        <input type="email"  id="email" placeholder="freshly@freshly.com"/>
+                        <br/>
+                        <label>ZIP Code</label>
+                        <br/>
+                        <input type="number" id="zip" placeholder="1111"/>
+                        <input type="submit" value="Explore Meals" id="submit"/>
+                    </form>
+                    <p>By continuing, you agree to our<a href="">Terms</a>and<a href="">Privacy Policy</a>& will receive emails from Freshly.</p>
+                </div>
+            </div>
+            <div id="b2">
+               <a href=""> <div id = "bb2">
+                   <div>.</div>
+                <div id="bb3">
+                    <h4>Simplfy The Season</h4>
+                    <h5>Add Heat and Share Holiday Favorites to Menu.</h5>
+                    <a href=""><p class="learn">Learn More</p></a>
+                </div>
+
+                </div>
+               </a>
+               
+
+                
+            </div>
+        </div>
+        <h1 id="hh1">How It Works</h1>
+        <div id="box3">
+            
+            
+            <div>
+                <img src="https://cdn.dribbble.com/users/3357896/screenshots/7451146/media/8b3449c854ac5d310f950cc5c07f01b7.gif"/>
+            </div>
+            <div>
+                <img src="https://cdn.dribbble.com/users/3357896/screenshots/7451146/media/fac875f3c5558c57375a7de67d44066b.gif"/>
+            </div>
+            <div>
+                <img src="https://cdn.dribbble.com/users/3357896/screenshots/7451146/media/d089637ce40084a8affa077edef63919.gif"/>
+            </div>
+            <div>
+                <img src="https://cdn.dribbble.com/users/3357896/screenshots/7451146/media/5ff5d81824f0b52c93719d1f58e40d22.gif"/>
+            </div>
+        
+        </div>
+
+        <div id="box4">
+            <div id="bb41">
+                <h1>On the menu</h1>
+                <h3>Each Freshly meal is perfectly sized for 1 person to enjoy at 1 sitting. Our fully-prepared meals are delivered fresh, and ready to eat in 3 minutes.</h3>
+
+            <div id="box61">
+                <div>
+                    <img src ="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61063fef3319dbcfa7088dc3_production-meal-image-29fee2e7-8e88-4cd3-aad9-0e7d25671f7f.jpeg"/>
+                    <p>Steak Peppercorn</p>
+                </div>
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61063ff2f0de047bd1f169eb_production-meal-image-0a78bae3-2e0c-4ab7-b420-154ed262d4d0.jpeg"/>
+                    <p>Homestyle Chicken</p>
+                </div>
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/61063ff66931cb0700bd4c57_production-meal-image-2d69b7cf-1233-428f-a8b4-bc9f77559500.jpeg"/>
+                    <p>Cauliflower Shell Beef Bolognese</p>
+                </div>
+            </div>
+            <div id="box62">
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/6187730888d8d77e1e4c24e6_production-meal-image-a9a473c8-c1e0-4b3e-a6f8-ffcbc4e8b21c.jpeg"/>
+                    <p>Savory-Sweet Chicken Teriyaki Bowl</p>
+                    
+                </div>
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640046931cb5d54bd5472_production-meal-image-7a62bb89-9bcb-4f1f-9f0f-d8372698d48e.jpeg"/>
+                    <p>Protein-Packed Chicken Parm</p>
+                </div>
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e13011831ae4624b37/610640073d293240fff8f560_production-meal-image-0e5c1b0a-7c87-4b3d-a476-3065980a3f2f.jpeg"/>
+                    <p>Golden Oven-Fried Chicken & Mash</p>
+                </div>
+            
+            </div>
+            <a href="plans.html" id="aa"><p id="plans">View Plans & Menu</p></a>
+
+        </div>
+        </div>
+
+
+        <div id="box5">
+            <div id="box51">
+                <h1>Plans that work for you</h1>
+                <p>Choose from 4, 6, 8, 10, or 12 meals per week. You can change up your number of meals with every order if you’d like.</p>
+            </div>
+            <div id="box52">
+                <div>
+                    <h1>4 Meals</h1>
+                    <p>per week</p>
+                    <h3>$11.79 / meal</h3>
+                    <a href="choose.html"><button class="choosebtn">Choose</button></a>
+                </div>
+                <div>
+                    <h1>6 Meals</h1>
+                    <p>per week</p>
+                    <h3>$9.99 / meal</h3>
+                    <button class="choosebtn">Choose</button>
+                </div>
+                <div>
+                    <h1>8 Meals</h1>
+                    <p>per week</p>
+                    <h3>$9.49 / meal</h3>
+                    <button class="choosebtn">Choose</button>
+                </div>
+                <div>
+                    <h1>10 Meals</h1>
+                    <p>per week</p>
+                    <h3>$9.29 / meal</h3>
+                    <button class="choosebtn">Choose</button>
+                </div>
+                <div>
+                    <h1>12 Meals</h1>
+                    <p>per week</p>
+                    <h3>$8.99 / meal</h3>
+                    <button class="choosebtn">Choose</button>
+                </div>
+                
+            </div>
+            <div id="box53">Shipping Added At Checkout</div>
+            
+        </div>
+
+        <div id="box6">
+            <h1 id="bh1">What Others Are Saying</h1>
+            <div id="box63">
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d96607e740addd99bf570ae_star.svg"/>
+                    <h3>Freshly has changed our lives!</h3>
+                    <p>With Freshly, we don’t have to go anywhere or wait for delivery, and our monthly food bill has been cut nearly in half. We love it.
+
+                        </p>
+                        <p>Dave</p>
+                </div>
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d96607e740addd99bf570ae_star.svg"/>
+                    <h3>One of the easiest decisions I've made</h3>
+                    <p>With Freshly, I don’t have to think about what I’m going to eat for lunch each day and feel good knowing that I’m eating a healthy meal. I love the convenience!
+
+                        </p>
+                        <p>Cindi</p>
+
+                </div>
+                <div>
+                    <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d96607e740addd99bf570ae_star.svg"/>
+                    <h3>10 stars! Awesome! Love it!</h3>
+                    <p>We love Freshly because it takes two minutes to prepare, the food is great and we don’t have to spend time cleaning up.
+
+                        </p>
+                        <p>Sheri</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="box7">
+            
+            <div id="box72">
+                <div id="box71">
+                    <h1>We believe eating right should be easy for everyone.</h1>
+                    <p>Each Freshly meal is perfectly sized for 1 person to enjoy at 1 sitting. Our fully-prepared meals are delivered fresh, and ready to eat in 3 minutes.</p>
+                    <a href="" id="learn"><p id="ll" class="learn">Learn More</p></a>
+                </div>
+                
+            </div>
+
+        </div>
+        <div id="box8">
+            
+            <div id="box82">
+                <div id="box81">
+                    <h1>Healthy Meals Delivered Weekly</h1>
+                    <form>
+                        <input type="email" id="email2" placeholder="freshly@freshly.com"/>
+                        <br/>
+                        <input type="number" id="zip2" placeholder="zip"/>
+                        <br/>
+                        <input type="submit" value="Get Started!" id="sub2"/>
+                    </form>
+                    <p>Already have an account?<a href="">Log in.</a></p>
+                    <p>By continuing, you agree to our<a href="">Terms</a>and<a href="">Privacy Policy</a>.& will receive emails from Freshly.</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="box9">
+         <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e435aee2e3a4ab03e6f_The_Huffington_Post_logo.svg"/>
+         <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e412d98cd166a6c84e6_logo-header.64f3bdc15b1f321829f9f30c7853a1469f469d71.svg"/>
+         <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e436b26e00a240533b1_Entrepreneur-01.svg"/>
+         <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e432759db28ffaf924f_w-g-logo-black.svg"/>
+         <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523f552759db186baf93d2_techcrunch-seeklogo.com%20%5BConverted%5D.svg"/>
+         <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f523e434bbecc1909457f48_logo-header.aeb2e510354d524c42a87c5d0a97d0a73c5d7581.svg"/>
+        <br/>
+        <hr/>
+        
+        </div>
+        <div id="box10">
+            <div id="box101">
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"/>
+            </div>
+            <div id="box102">
+                <h4>Company</h4>
+                <p>Carrers</p>
+                <p>Contact Us</p>
+                <p>Press</p>
+                <p>Terms</p>
+                <p>Privacy</p>
+                <p>Affiliates</p>
+
+
+            </div>
+            <div id="box103">
+                <h4>Learn More</h4>
+                <p>Plans & Menu</p>
+                <p>Why Freshly?</p>
+                <p>Gifts</p>
+                <p>FAQs</p>
+                <p>Blog</p>
+                <p>Students</p>
+
+            </div>
+            <div id="box104">
+                <h4>Join Us</h4>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d6439d4fb92e7630e46976b_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"/>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d643dd558306bfe1df5ef8b_google-play-badge.png"/>
+            </div>
+
+        </div>
+        
+
+
+        
+
+    
+    
+    
+    
+    </div>
+    
+</body>
+<script>
+
+</script>
+</html>

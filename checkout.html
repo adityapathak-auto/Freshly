@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out Page Freshly</title>
+    <style>
+         #nav{
+            display: flex;
+            position: sticky;
+   top: 0;
+   z-index: 100;
+   background-color: white;
+        }
+        #c1{
+            flex-basis: 16%;
+        } #c2{
+            flex-basis: 40%;
+            margin-left: 10%;
+        }
+        #c3{
+            flex-basis: 30%;
+            margin-left: 8%;
+            
+            
+        }
+        #c1>img{
+            width: 80%;
+        }
+        #c2{
+            display: flex;
+        }
+        #c2>a{
+            margin-left: 5%;
+            color: black;
+            text-decoration: none;
+            
+        }
+        #c3>a{
+            margin-left: 5%;
+            width: 60%;
+            border: none;
+        }
+        #login{
+            margin: 3%;
+            margin-right: 0px;
+            margin-left: 180px;
+            width: 15%;
+            border: none;
+            height: 60%;
+            background-color: white;
+        }
+        #signup{
+            margin: 3%;
+            
+            margin-left: 0px;
+            width: 18%;
+            border: 1px solid white;
+            background-color: royalblue;
+            color: white;
+            height: 60%;
+        }
+        #box{
+            display: flex;
+            width: 85%;
+            gap: 5%;
+            margin: 10% auto;
+        }
+        #box1{
+            flex-basis: 60%;
+            border: 0.5px solid lightgray;
+        }
+        #box2{
+            flex-basis: 40%;
+            border: 0.5px solid lightgray;
+
+        }
+    
+        #box11{
+            padding: 2%;
+            padding-left: 5%;
+        }.name{
+            display: flex;
+            gap: 5%;
+        }
+        form>input{
+            width: 60%;
+            margin: 2%;
+            padding: 2%;
+        }
+        form>label{
+            font-size: large;
+
+        }
+        .name>label{
+            font-size: large;
+        }
+        .name>input{
+            width: 30%;
+            padding: 2%;
+            margin: 1%;
+        }
+        #box13{
+            display: flex;
+            gap: 50%;
+        }
+        #nxt{
+            background-color: royalblue;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            margin-top: 2%;
+            width: 85%;
+            border: none;
+            height: 50px;
+        }
+        #box21{
+            display: grid;
+            grid-template-columns: 30% 30%;
+            gap: 2% 40%;
+            border: 0.5px solid lightgray;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="c1">
+            <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"/>
+        </div>
+        <div id="c2">
+            <a href=""><p>Plans & Menu</p></a>
+            <a href=""><p>How It works</p></a>
+            <a href=""><p>Gifts</p></a>
+            <a href=""><p>Refer A Friend</p></a>
+            <a href=""><p>Help</p></a>
+
+        </div>
+        <div id="c3">
+            <a href="login.html"><button id="login">Login</button></a>
+            <a href="signup.html"><button id="signup">Sign Up</button></a>
+        </div>
+        
+    </div>
+    <div id="box">
+        <div id="box1">
+            <h2>Checkout</h2>
+            <div id="box11">
+                <h2>Delivery Address</h1>
+                    <form>
+                        <div class="name">
+                        <label>First Name</label>
+                        
+                        
+                        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <nbsp>
+                            
+                        </nbsp> &nbsp; &nbsp;  Last Name</label>
+                        
+                    </div>
+                    <div class="name">
+                        <input type="text">
+                        <input type="text">
+
+                    </div>
+                    <label>Full name for delivery address</label>
+                    <br/>
+                    <input id="add" type="text"/>
+                    <br/>
+                    <label>City</label>
+                    <br/>
+                    <input type="text"/>
+                    <br/>
+                    <label>State</label>
+                    <br/>
+                    <input type="text"/>
+                    <br/>
+                    <label>ZIP</label>
+                    <br/>
+                    <input type="number"/>
+                    <br/>
+                    <label>Phone</label>
+                    <br/>
+                    <input type="number"/>
+                    <br/>
+                    <label>Email</label>
+                    <br/>
+                    <input type="email"/>
+
+
+                    </form>
+
+                    <div id="box13">
+                        <h3>Today's Total</h3>
+                        <h3>$54.15</h3>
+                    </div>
+                   <a href="payement.html"><button id="nxt">Checkout</button></a>
+            </div>
+
+
+        </div>
+        <div id="box2">
+            <h1>Order Summary</h1>
+            <div id="box21">
+                <h4>Delivery Date</h4>
+                <h4>Thursday, Nov 18</h4>
+                
+                <h4>4 Meals Per Week</h4>
+                <h4>$47.16</h4>
+                
+                <h4>Shipping</h4>
+                <h4>$6.99</h4>
+                
+                <hr/>
+                <hr/>
+                
+                <h3>Today’s Total</h3>
+                <h3>$54.15</h3>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
